@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import '../../../core/app_export.dart'; // ignore: must_be_immutable
 
-class JoblistingItemWidget extends StatelessWidget {
+class JoblistingItemWidget extends StatefulWidget {
   const JoblistingItemWidget({Key? key})
       : super(
           key: key,
         );
 
+  @override
+  State<JoblistingItemWidget> createState() => _JoblistingItemWidgetState();
+}
+
+class _JoblistingItemWidgetState extends State<JoblistingItemWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
